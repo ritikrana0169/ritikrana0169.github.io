@@ -1,0 +1,180 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar styles */
+  #nav-menu {
+    background-color: #333;
+    color: #fff;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  #nav-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0 20px;
+  }
+  
+  #nav-menu ul li {
+    list-style: none;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+  }
+  
+  .nav-link:hover {
+    background-color: #555;
+  }
+  
+  .home {
+    font-weight: bold;
+  }
+  
+  .about {
+    font-style: italic;
+  }
+  
+  .skills {
+    text-transform: uppercase;
+  }
+  
+  .projects {
+    letter-spacing: 1px;
+  }
+  
+  .contact {
+    text-decoration: underline;
+  }
+  
+  .resume {
+    background-color: #ff4c4c;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+  }
+  
+  .resume:hover {
+    background-color: #ff3333;
+  }
+  
+  /* Home section styles */
+  #home {
+    background-color: #eee;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* About section styles */
+  #about {
+    background-color: #fff;
+    padding: 50px;
+  }
+  
+  #user-detail-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #user-detail-intro {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Skills section styles */
+  #skills {
+    background-color: #eee;
+    padding: 50px;
+  }
+  
+  .skills-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .skills-card-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .skills-card-name {
+    font-size: 20px;
+  }
+  
+  /* Projects section styles */
+  #projects {
+    background-color: #fff;
+    padding: 50px;
+  }
+  
+  .project-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .project-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .project-tech-stack {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .project-github-link,
+  .project-deployed-link {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact section styles */
+  #contact {
+    background-color: #eee;
+    padding: 50px;
+  }
+  
+  #contact-github,
+  #contact-linkedin,
+  #contact-phone,
+  #contact-email {
+    display: block;
+    margin-bottom: 20
+  }  
