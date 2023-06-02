@@ -1,53 +1,75 @@
-// Get the navigation menu and all the links inside it
-const navMenu = document.getElementById('nav-menu');
-const navLinks = navMenu.querySelectorAll('.nav-link');
+$(document).ready(function () {
+  $(window).scroll(function () {
+    // sticky navbar on scroll script
+    if (this.scrollY > 20) {
+      $(".navbar").addClass("sticky");
+    } else {
+      $(".navbar").removeClass("sticky");
+    }
 
-// Add a click event listener to each link
-navLinks.forEach(link => {
-  link.addEventListener('click', event => {
-    // Prevent the default link behavior
-    event.preventDefault();
+    // scroll-up button show/hide script
+    if (this.scrollY > 500) {
+      $(".scroll-up-btn").addClass("show");
+    } else {
+      $(".scroll-up-btn").removeClass("show");
+    }
+  });
 
-    // Get the ID of the section to scroll to
-    const sectionId = link.getAttribute('href').slice(1);
+  // slide-up script
+  $(".scroll-up-btn").click(function () {
+    $("html").animate({ scrollTop: 0 });
+    // removing smooth scroll on slide-up button click
+    $("html").css("scrollBehavior", "auto");
+  });
 
-    // Scroll to the section with a smooth animation
-    document.getElementById(sectionId).scrollIntoView({
-      behavior: 'smooth'
-    });
+  $(".navbar .menu li a").click(function () {
+    // applying again smooth scroll on menu items click
+    $("html").css("scrollBehavior", "smooth");
+  });
+
+  // toggle menu/navbar script
+  $(".menu-btn").click(function () {
+    $(".navbar .menu").toggleClass("active");
+    $(".menu-btn i").toggleClass("active");
+  });
+
+  // typing text animation script
+  var typed = new Typed(".typing", {
+    strings: ["Java Back-End Developer", "Dreamer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+  });
+
+  var typed = new Typed(".typing-2", {
+    strings: ["Java Back-End Developer", "Dreamer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+  });
+
+  // owl carousel script
+  $(".carousel").owlCarousel({
+    margin: 20,
+    loop: true,
+    autoplay: true,
+    autoplayTimeOut: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+      600: {
+        items: 2,
+        nav: false,
+      },
+      1000: {
+        items: 3,
+        nav: false,
+      },
+    },
   });
 });
 
-// Get the two resume buttons and add click event listeners to them
-const resumeButton1 = document.getElementById('resume-button-1');
-const resumeButton2 = document.getElementById('resume-button-2');
 
-resumeButton1.addEventListener('click', () => {
-  window.open('https://example.com/resume.pdf', '_blank');
-});
-
-resumeButton2.addEventListener('click', () => {
-  window.open('https://example.com/resume.pdf', '_blank');
-});
-
-// Get the two resume links and add click event listeners to them
-const resumeLink1 = document.getElementById('resume-link-1');
-const resumeLink2 = document.getElementById('resume-link-2');
-
-resumeLink1.addEventListener('click', () => {
-  window.open('https://example.com/resume.pdf', '_blank');
-});
-
-resumeLink2.addEventListener('click', () => {
-  window.open('https://example.com/resume.pdf', '_blank');
-});
-
-// Get the project cards and add click event listeners to them
-const projectCards = document.querySelectorAll('.project-card');
-
-projectCards.forEach(card => {
-  card.addEventListener('click', () => {
-    const deployedLink = card.querySelector('.project-deployed-link').getAttribute('href');
-    window.open(deployedLink, '_blank');
-  });
-});
