@@ -1,2 +1,2 @@
-# amita0115.github.io
+# ritikrana0169.github.io
 portfolio
