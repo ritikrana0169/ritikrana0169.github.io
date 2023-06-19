@@ -1,11 +1,12 @@
 /*  import google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Zilla Slab', serif;
 }
 html {
   scroll-behavior: smooth;
@@ -76,7 +77,7 @@ section .title::after {
   bottom: -8px;
   left: 50%;
   font-size: 20px;
-  color: crimson;
+  color: #20be89;
   padding: 0 5px;
   background: #fff;
   transform: translateX(-50%);
@@ -90,7 +91,7 @@ section .title::after {
   padding: 30px 0;
   font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
-  background-color: black;
+  background-color: #1e2025;
 }
 
 #nav-menu .max-width {
@@ -99,12 +100,12 @@ section .title::after {
   justify-content: space-between;
 }
 #nav-menu .logo a {
-  color: #fff;
+  color: #d36217;
   font-size: 35px;
   font-weight: 600;
 }
 #nav-menu .logo a span {
-  color: crimson;
+  color: #20be89;
   transition: all 0.3s ease;
 }
 #nav-menu.sticky .logo a span {
@@ -123,7 +124,7 @@ section .title::after {
   transition: color 0.3s ease;
 }
 #nav-menu .menu li a:hover {
-  color: crimson;
+  color: #20be89;
 }
 #nav-menu.sticky .menu li a:hover {
   color: #fff;
@@ -158,7 +159,7 @@ section .title::after {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: crimson;
+  background: #20be89;
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -214,23 +215,23 @@ section .title::after {
   margin: 5px 0;
 }
 #home .home-content .text-3 span {
-  color: crimson;
+  color: #20be89;
   font-weight: 500;
 }
 #home .home-content a {
   display: inline-block;
-  background: crimson;
+  background: #d36217;
   color: #fff;
   font-size: 25px;
   padding: 12px 36px;
   margin-top: 20px;
   font-weight: 400;
   border-radius: 6px;
-  border: 2px solid crimson;
+  border: 2px solid #d36217;
   transition: all 0.3s ease;
 }
 #home .home-content a:hover {
-  color: crimson;
+  color: #20be89;
   background: none;
 }
 
@@ -256,25 +257,25 @@ section .title::after {
   margin-bottom: 10px;
 }
 #about .about-content .right .text span {
-  color: crimson;
+  color: #20be89;
 }
 #about .about-content .right p {
   text-align: justify;
 }
 #about .about-content .right a {
   display: inline-block;
-  background: crimson;
+  background: #20be89;
   color: #fff;
   font-size: 20px;
   font-weight: 500;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid crimson;
+  border: 2px solid #20be89;
   transition: all 0.3s ease;
 }
 #about .about-content .right a:hover {
-  color: crimson;
+  color: #20be89;
   background: none;
 }
 
@@ -303,7 +304,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 .services .serv-content .card:hover {
-  background: crimson;
+  background: #d36217;
 }
 .services .serv-content .card .box {
   transition: all 0.3s ease;
@@ -313,7 +314,7 @@ section .title::after {
 }
 .services .serv-content .card i {
   font-size: 50px;
-  color: crimson;
+  color: #20be89;
   transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i {
@@ -356,7 +357,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 #projects .carousel .project-card:hover {
-  background: crimson;
+  background:#20be89;
 }
 
 #projects .carousel .project-card .text {
@@ -402,7 +403,7 @@ section .title::after {
   height: 300px;
   object-fit: cover;
   border-radius: 5%;
-  border: 5px solid crimson;
+  border: 5px solid #20be89;
   transition: all 0.3s ease;
   align-items: center;
 }
@@ -419,7 +420,7 @@ section .title::after {
   margin: 0 5px;
   outline: none !important;
   border-radius: 50%;
-  border: 2px solid crimson !important;
+  border: 2px solid #20be89 !important;
   transition: all 0.3s ease;
 }
 .owl-dot.active {
@@ -428,7 +429,7 @@ section .title::after {
 }
 .owl-dot.active,
 .owl-dot:hover {
-  background: crimson !important;
+  background: #d36217 !important;
 }
 
 /* contact section styling */
@@ -459,7 +460,7 @@ section .title::after {
 }
 .contact .contact-content .row i {
   font-size: 25px;
-  color: crimson;
+  color: #20be89;
 }
 .contact .contact-content .info .head {
   font-weight: 500;
@@ -526,12 +527,12 @@ section .title::after {
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: crimson;
-  border: 2px solid crimson;
+  background: #20be89;
+  border: 2px solid #20be89;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover {
-  color: crimson;
+  color: #20be89;
   background: none;
 }
 /* footer section styling */
@@ -542,7 +543,7 @@ footer {
   text-align: center;
 }
 footer span a {
-  color: crimson;
+  color: #20be89;
   text-decoration: none;
 }
 footer span a:hover {
