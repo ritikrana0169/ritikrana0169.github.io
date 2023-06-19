@@ -579,59 +579,6 @@ footer span a:hover {
     content: "\f00d";  
   }
 
-
-
-  .menu-btn {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .menu-btn .menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background: #1e2025;
-    text-align: center;
-    transition: all 0.3s ease;
-  }
-  
-  .menu-btn .menu li {
-    margin-bottom: 10px;
-  }
-  
-  .menu-btn .menu a {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .menu-btn i.active:before {
-    content: "\f00d";
-  }
-  
-  .menu-btn.active .menu {
-    display: block;
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
   #nav-menu .menu {
     position: fixed;
     height: 100vh;
@@ -713,13 +660,72 @@ footer span a:hover {
     width: 100%;
   }
 }
-
+/* 
 @media (max-width: 500px) {
   body{
     width: 105%;
   }
   #stat{
     display: block; 
+    justify-content: center;
+  }
+  #home .home-content .text-2 {
+    font-size: 50px;
+  }
+  #home .home-content .text-3 {
+    font-size: 27px;
+  }
+  #about .about-content .right .text,
+  #skills .skills-content .left .text {
+    font-size: 19px;
+  }
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+  .right form .error-box {
+    width: 150px;
+  }
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
+  }
+} */
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 500px) {
+  body {
+    width: 155%;
+  }
+  #stat {
+    display: block;
     justify-content: center;
   }
   #home .home-content .text-2 {
