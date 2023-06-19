@@ -728,6 +728,11 @@ body {
     display: block;
     justify-content: center;
   }
+  #home{
+    background: url(./images/cover2.jpg);
+  }
+
+
   #home .home-content .text-2 {
     font-size: 50px;
   }
