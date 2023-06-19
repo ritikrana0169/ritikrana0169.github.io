@@ -32,7 +32,10 @@ $(document).ready(function () {
     $(".nav-menu .menu").toggleClass("active");
     $(".menu-btn i").toggleClass("active");
   });
-
+  function toggleMenu() {
+    var menuBtn = document.querySelector(".menu-btn");
+    menuBtn.classList.toggle("active");
+  }
   // typing text animation script
   var typed = new Typed(".typing", {
     strings: ["Java Back-End Developer"],
@@ -71,3 +74,4 @@ $(document).ready(function () {
     },
   });
 });
+

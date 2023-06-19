@@ -1,5 +1,6 @@
 /*  import google fonts */
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"); */
+
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap');
 * {
   margin: 0;
@@ -42,7 +43,7 @@ section {
 #projects,
 .contact,
 footer {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 #about .about-content,
 .services .serv-content,
@@ -60,7 +61,7 @@ section .title {
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: "Ubuntu", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
 }
 section .title::before {
   content: "";
@@ -89,9 +90,9 @@ section .title::after {
   width: 100%;
   z-index: 999;
   padding: 30px 0;
-  font-family: "Ubuntu", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
   transition: all 0.3s ease;
-  background-color: #1e2025;
+  background-color: #000000;
 }
 
 #nav-menu .max-width {
@@ -193,7 +194,7 @@ section .title::after {
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
-  font-family: "Ubuntu", sans-serif;
+  /* font-family: "Ubuntu", sans-serif; */
 }
 #home .max-width {
   width: 100%;
@@ -501,7 +502,7 @@ section .title::after {
   outline: none;
   padding: 0 15px;
   font-size: 17px;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   transition: all 0.3s ease;
 }
 .contact .right form .field input:focus,
@@ -574,15 +575,70 @@ footer span a:hover {
     z-index: 999;
   }
   .menu-btn i.active:before {
+    
+    content: "\f00d";  
+  }
+
+
+
+  .menu-btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .menu-btn .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #1e2025;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-btn .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu-btn .menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu-btn i.active:before {
     content: "\f00d";
   }
+  
+  .menu-btn.active .menu {
+    display: block;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
   #nav-menu .menu {
     position: fixed;
     height: 100vh;
     width: 100%;
     left: -100%;
     top: 0;
-    background: #111;
+    background: #1e2025;
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
@@ -634,6 +690,9 @@ footer span a:hover {
 }
 
 @media (max-width: 690px) {
+  body{
+    width: 100%;
+  }
   #stat{
     display: block; 
     justify-content: center;
@@ -656,6 +715,9 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
+  body{
+    width: 105%;
+  }
   #stat{
     display: block; 
     justify-content: center;
