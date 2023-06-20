@@ -92,7 +92,7 @@ section .title::after {
   padding: 30px 0;
   /* font-family: "Ubuntu", sans-serif; */
   transition: all 0.3s ease;
-  background-color: #101113;
+  background-color: #161414da;
 }
 
 #nav-menu .max-width {
@@ -349,15 +349,18 @@ section .title::after {
 #projects .title::after {
   content: "see my work";
 }
+.project-description{
+  height: 12vh;
+}
 #projects .carousel .project-card {
   width: 100%;
-  height: 95vh;
+  /* height: 95vh; */
   background: #222;
   border-radius: 6px;
   padding: 25px 35px;
   text-align: center;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 #projects .carousel .project-card:hover {
   background:#20be89;
@@ -587,7 +590,7 @@ footer span a:hover {
     width: 100%;
     left: -100%;
     top: 0;
-    background: #101113;
+    background: #1e2025;
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
@@ -715,28 +718,23 @@ body {
   color: #333;
 }
 
-/* .container {
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-} */
+}
 
 /* Media query for mobile devices */
 @media (max-width: 500px) {
-  body{
-    width: 150%;
-    overflow-x: hidden;
-  }
-  .project-card{
-  height: 100%;
+  body {
+    width: 155%;
   }
   #stat {
     display: block;
     justify-content: center;
   }
   #home{
-    background: url(./images/cover.jpg) no-repeat;
-    
+    background: url(./images/cover.jpg);
 
   }
 
