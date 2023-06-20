@@ -92,7 +92,7 @@ section .title::after {
   padding: 30px 0;
   /* font-family: "Ubuntu", sans-serif; */
   transition: all 0.3s ease;
-  background-color: #161414da;
+  background-color: #101113;
 }
 
 #nav-menu .max-width {
@@ -587,7 +587,7 @@ footer span a:hover {
     width: 100%;
     left: -100%;
     top: 0;
-    background: #1e2025;
+    background: #101113;
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
@@ -715,23 +715,28 @@ body {
   color: #333;
 }
 
-.container {
+/* .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-}
+} */
 
 /* Media query for mobile devices */
 @media (max-width: 500px) {
-  body {
-    width: 155%;
+  body{
+    width: 150%;
+    overflow-x: hidden;
+  }
+  .project-card{
+  height: 100%;
   }
   #stat {
     display: block;
     justify-content: center;
   }
   #home{
-    background: url(./images/cover.jpg);
+    background: url(./images/cover.jpg) no-repeat;
+    
 
   }
 
