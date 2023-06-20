@@ -187,8 +187,8 @@ section .title::after {
 /* home section styling */
 #home {
   display: flex;
-  background: url("images/cover.jpg") no-repeat center;
-  background-color: #111;
+  /* background: url("images/cover.jpg") no-repeat center; */
+  background-color: black;
   height: 100vh;
   color: #fff;
   min-height: 500px;
@@ -729,7 +729,8 @@ body {
     justify-content: center;
   }
   #home{
-    background: url(./images/cover2.jpg);
+    /* background: url(./images/cover2.jpg); */
+
   }
 
 
