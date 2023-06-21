@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function () { 
   $(window).scroll(function () {
     // sticky nav-menu on scroll script
     if (this.scrollY > 20) {
