@@ -150,6 +150,41 @@ section .title::after {
   padding: 0 40px 0 0;
 }
 
+
+/* recent edit */
+.ht1{
+  width: 100%;
+}
+
+
+.ht2{
+  width: 100%;
+}
+
+
+.ht3{
+  width: 40%;
+}
+
+.myProjects{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* menu btn styling */
 .menu-btn {
   color: #fff;
@@ -353,21 +388,22 @@ section .title::after {
 .project-description{
   height: 12vh;
 }
-#projects .carousel .project-card {
-  width: 100%;
-  height: 90vh;
+#projects .myProjects .project-card {
+  width: 98%;
+  /* height: 90vh; */
   background: #222;
   border-radius: 6px;
   padding: 25px 35px;
   text-align: center;
+  
   overflow: hidden;
   transition: all 0.4s ease;
 }
-#projects .carousel .project-card:hover {
+#projects .myProjects .project-card:hover {
   background:#20be89;
 }
 
-#projects .carousel .project-card .text {
+#projects .myProjects .project-card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
@@ -406,15 +442,15 @@ section .title::after {
   color: white;
 }
 
-#projects .carousel .project-card img {
-  height: 300px;
+#projects .myProjects .project-card img {
+  height: 220px;
   object-fit: cover;
   border-radius: 5%;
   border: 5px solid #20be89;
   transition: all 0.3s ease;
   align-items: center;
 }
-#projects .carousel .project-card:hover img {
+#projects .myProjects .project-card:hover img {
   border-color: #fff;
 }
 .owl-dots {
@@ -566,9 +602,18 @@ footer span a:hover {
   .max-width {
     width: 100%;
   }
+  .myProjects{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 10vh;
+  }
 }
 
 @media (max-width: 1050px) {
+  #nav-menu{
+    width: 100%;
+  }
   #stat{
     display: block; 
     justify-content: center;
@@ -581,7 +626,12 @@ footer span a:hover {
     
     content: "\f00d";  
   }
-
+  .myProjects{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 10vh;
+  }
   #nav-menu .menu {
     position: fixed;
     height: 100vh;
@@ -640,6 +690,12 @@ footer span a:hover {
 }
 
 @media (max-width: 690px) {
+  .myProjects{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 10vh;
+  }
   body{
     width: 100%;
   }
@@ -724,8 +780,24 @@ body {
 
 /* Media query for mobile devices */
 @media (max-width: 500px) {
+  .myProjects{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 30vh;
+    line-height: 40px;
+  }
+  .myProjects p{
+    margin-top: 50px;
+  }
+  #nav-menu{
+    width: 100%;
+  }
+  .ht3{
+    width: 70%;
+  }
   body {
-    width: 155%;
+    width: 100%;
   }
   #stat {
     display: block;
