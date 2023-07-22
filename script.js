@@ -1,4 +1,10 @@
 $(document).ready(function () { 
+
+
+ 
+
+
+  
   $(window).scroll(function () {
     // sticky nav-menu on scroll script
     if (this.scrollY > 20) {
@@ -73,4 +79,14 @@ $(document).ready(function () {
     },
   });
 });
+// document.addEventListener("DOMContentLoaded", function() {
+//   const menuBtn = document.getElementById("hamburger-icon");
+//   const menuItems = document.getElementById("menu-items");
+  
+//   menuBtn.addEventListener("click", function() {
+//     console.log(1)
+//       menuItems.classList.toggle("show-menu");
+//   });
+// });
+
 
