@@ -214,7 +214,7 @@ nav>div:nth-child(2)>ul>li>button>a {
 }
 .about1>div:nth-child(2)>div:nth-child(1){
     text-align: center;
-    margin-left: 10vw;
+    /* margin-left: 10vw; */
     width: 70%;
 }
 .about1>div:nth-child(2)>div:nth-child(1)>div:nth-child(2)>button{
