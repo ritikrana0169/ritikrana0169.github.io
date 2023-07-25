@@ -208,15 +208,18 @@ img {
 
 #resume-link-2 {
     font-size: var(--normal-font-size);
-    color: #fff;
+    color: #b9732f;
     font-family: 'Poppins', sans-serif;
+}
+#resume-link-2:hover{
+    color: white;
 }
 
 .button:hover {
     cursor: pointer;
     background-color: var(--first-color);
     transform: scale(1.05);
-    color: white;
+    color: #edf6ff;
 }
 
 .button_icon {
@@ -338,7 +341,9 @@ img {
     padding: 0 1.5rem 0;
     transition: 0.5s;
 }
-
+/* #resume-button-2{
+    color: #b9732f;
+} */
 .nav_link:hover {
     color: var(--first-color);
 }
