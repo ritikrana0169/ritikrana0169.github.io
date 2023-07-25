@@ -1,341 +1,861 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="">
-    <title>Portfolio | Ritik Rana</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/x-icon" href="./image/logo.jpg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
-</head>
+    <link rel="icon" href="Images/head-logo.png" type="image/icon type">
+    <title>Ritik Rana || Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/calendar.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 
 <body>
-    <nav>
-        <div>
-            <h1><a href="./index.html">Ritik Rana</a></h1>
-        </div>
-        <div>
-            <ul id="nav-menu" class="links">
-                <li>
-                    <a class="nav-link home" href="#home">HOME</a>
-                </li>
-                <li>
-                    <a class="nav-link about" href="#about">ABOUT</a>
-                </li>
-                <li>
-                    <a class="nav-link skills" href="#skills">SKILLS</a>
-                </li>
-                <li>
-                    <a class="nav-link projects" href="#projects">PROJECTS</a>
-                </li>
-                <li>
-                    <a class="nav-link git" href="#gstats">GITHUB</a>
-                </li>
-                <li>
-                    <a class="nav-link contact" href="#contact">CONTACT</a>
-                </li>
-                <li>
-                    <button onclick="resume()" id="resume-button-1" class="nav-link resume"><a id="resume-link-1"
-                            href="./Resume/Ritik_Rana_Resume.pdf" download="Ritik-rana-Resume.pdf"
-                            target="_blank">RESUME</a></button>
-                </li>
-            </ul>
-        </div>
-        <div class="barContainer">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="" class="nav_logo"><span>Ritik </span>Rana</a>
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link nav-link home active-link">
+                            <i class="uil uil-estate nav_icon"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link nav-link about">
+                            <i class="uil uil-user nav_icon"></i> About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link nav-link skills">
+                            <i class="uil uil-file-alt nav_icon"></i> Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#projects" class="nav_link nav-link projects">
+                            <i class="uil uil-briefcase-alt nav_icon"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#statistics" class="nav_link">
+                            <i class="uil uil-graph-bar nav_icon"></i> Github
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link nav-link contact">
+                            <i class="uil uil-message nav_icon"></i> Contact Me
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <button id="resume-button-1" class="nav-link resume">
+                            <a href="./image/Ritik_Rana_Resume.pdf" class="nav_link" id="resume-link-1"
+                                onclick="window.open('https://drive.google.com/file/d/1-1wek682K18Qu8P3GYuAeMdgVM-x0qRf/view?usp=sharing')"
+                                target="_blank" download>
+                                <i class="uil uil-download-alt nav_icon"></i> Resume
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav_close" id="nav-close"></i>
+            </div>
+            <div class="nav_btns">
+                <!-- ===== Theme Changer ===== -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-    <section id="home" class="home1">
-        <div>
-            <div>
-                <h2>Hello there, This is </h2>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
             </div>
-            <div>
-                <h1 id="user-detail-name">Ritik Rana</h1>
+        </nav>
+    </header>
+    <!-- ========== MAIN ========== -->
+    <main class="main">
+        <!-- ========== Home ========== -->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+                    <div class="home_social">
+                        <a id="contact-linkedin" href="https://www.linkedin.com/in/ritik-rana-up17/" target="_blank"
+                            class="home_social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a id="contact-github" href="https://github.com/ritikrana0169" target="_blank"
+                            class="home_social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a id="contact-phone" href="#" target="_blank"
+                            class="home_social-icon">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="home_img">
+                        <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                                <image x="10" y="1" class="home_blob-img" href="./Images/about.png" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="home_data">
+                        <h1 class="home_title" id="user-detail-name">Hi👋, I'm<br>Ritik Rana</h1>
+                        <h3 class="home_subtitle"><span class="auto-type"></span></h3>
+                        <p class="home_description">Java Backend Developer along with decent knowledge of Frontend
+                            skills such as HTML, CSS & JavaScript.</p>
+                        <div class="btn_container">
+                            <a href="#contact" class="button button-flex sec_button">
+                                Connect with Me <i class="uil uil-message button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="home_scroll">
+                    <a href="#about" class="home_scroll-button button-flex">
+                        <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+                        <span class="home_scroll-name">Scroll Down</span>
+                        <i class="uil uil-arrow-down home_scroll-arrow"></i>
+                    </a>
+                </div>
             </div>
-            <div>
-                <h2>Java Backend Developer</h2>
+        </section>
+        <hr class="hr_break_line">
+        <!-- ========== About ========== -->
+        <section class="about section" id="about">
+            <h2 class="section_title">About Me</h2>
+
+            <div class="about_container container grid">
+                <img src="./Images/2.png" alt="" class="about_img home-img">
+                <div class="about_data">
+                    <p class="about_description" id="user-detail-intro">As a Java backend developer at Aspirent, honed
+                        skills in developing robust and scalable applications. With a deep understanding of Java, Spring
+                        framework, MySQL, HTML, CSS, and JavaScript, successfully delivered high-quality solutions.
+                        Takes pride in the ability to solve complex problems, optimize performance, and contribute to
+                        the success of projects through strong coding practices and commitment to continuous learning.
+                    </p>
+                    <div class="about_info">
+                        <div>
+                            <span class="about_info-title">2100+</span>
+                            <span class="about_info-name">Hours of Coding</span>
+                        </div>
+                        <div>
+                            <span class="about_info-title">5</span>
+                            <span class="about_info-name">Projects</span>
+                        </div>
+                        <div>
+                            <span class="about_info-title">350+</span>
+                            <span class="about_info-name">DSA Problems</span>
+                        </div>
+                    </div>
+
+                    <div class="about_buttons">
+                        <button class="button" id="resume-button-2">
+                            <a href="./image/Ritik_Rana_Resume.pdf" class="button-flex" id="resume-link-2"
+                                onclick="window.open('https://drive.google.com/file/d/1-1wek682K18Qu8P3GYuAeMdgVM-x0qRf/view?usp=sharing')"
+                                target="_blank" download>
+                                My Resume <i class="uil uil-download-alt button_icon"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
             </div>
-        </div>
-        <div>
-            <img width="70%" src="./image/giphy.gif" alt="Error">
-        </div>
-    </section>
-    <section id="about" class="about section about1">
-        <h1 class="title">About</h1>
-        <div>
-            <div>
-                <h3 id="user-detail-intro">
-                    A self-motivated Java Backend Developer with a solid foundation in developing scalable backend
-                    applications. Proficient in Java programming language and able to work collaboratively with
-                    cross-functional teams and deliver highquality software. Passionate about staying up-to-date. And
-                    having knowledge about Java, Hibernate, Spring, MySQL, C++, JavaScript, HTML and CSS.
-                </h3>
+            <div class="qualification">
+                <div class="qualification_container container">
+                    <div class="qualification_tabs">
+                        <div class="qualification_button button-flex qualification_active" data-target='#education'>
+                            <i class="uil uil-graduation-cap qualification_icon"></i>&nbsp;Education
+                        </div>
+                        <div class="qualification_button button-flex" data-target='#work'>
+                            <i class="uil uil-briefcase-alt qualification_icon"></i>&nbsp;Work
+                        </div>
+                    </div>
+                    <div class="qualification_sections">
+                        <!-- ========== Qualification Content 1 ========== -->
+                        <div class="qualification_content qualification_active" data-content id="education">
+                            <!-- ========== Qualification 1 ========== -->
+                            <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">Full Stack Web Development</h3>
+                                    <span class="qualification_subtitle">Masai School, Bengaluru</span>
+                                    <div class="qualification_calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        [ July 2022 - July 2023 ]
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification_data" style="margin-top: 3vh;">
+                                <div>
+                                    <h3 class="qualification_title">Bachelor in Arts</h3>
+                                    <span class="qualification_subtitle">Janta Vedic College</span>
+                                    <div class="qualification_calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        [ May 2019 – August 2022 ]
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+
+                            <div class="qualification_data" style="margin-top: 3vh;">
+                                <div>
+                                    <h3 class="qualification_title">Higher Secondary Education</h3>
+                                    <span class="qualification_subtitle">Intermediate college of Education</span>
+                                    <div class="qualification_calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        [ April 2018 – May 2019 ]
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <!-- ========== Qualification Content 2 ========== -->
+                        <!-- <div class="qualification_content" data-content id="work"> -->
+                            <!-- ========== Experience 1 ========== -->
+                            <!-- <div class="qualification_data">
+                                <div>
+                                    <h3 class="qualification_title">Sr.Accountant</h3>
+                                    <span class="qualification_subtitle">Anand Foods, RobertsGanj, Sonbhadra(UP)</span>
+                                    <div class="qualification_calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        [Nov 2019 - April 2021]
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                            </div>
+                             ========== Experience 2 ========== 
+                            <div class="qualification_data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification_rounder"></span>
+                                    <span class="qualification_line"></span>
+                                </div>
+                                <div>
+                                    <h3 class="qualification_title">Jr.Accountant</h3>
+                                    <span class="qualification_subtitle">Sukhbir Agro Energy LTD, Ghazipur(UP)</span>
+                                    <div class="qualification_calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        [July 2016 - Oct 2019]
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <hr class="hr_break_line">
+
+
+        <!-- ========== Skills ========== -->
+        <section class="skills section" id="skills">
+            <h2 class="section_title">Skills & Tools</h2>
+
+            <div class="skills_container container grid">
                 <div>
-                    <button onclick="resume()" id="resume-button-2"><a id="resume-link-2"
-                            href="./Resume/./Ritik_Rana_Resume.pdf" download="Ritik_Rana_Resume.pdf"
-                            target="_blank">RESUME</a></button>
-                </div>
-            </div>
-            <div>
-                <img class="home-img" src="./image/ProfessionalImage.jpg" alt="">
-            </div>
-        </div>
-    </section>
-    <section id="skills" class="technicalSkills">
-        <h2 class="title">Skills</h2>
-        <div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./image/java.svg" alt="">
-                <span class="skills-card-name"></span>
-            </div>
-
-            <div class="skills-card">
-                <img class="skills-card-img" src="./image/hibernatesvg.svg" alt="">
-                <span class="skills-card-name"></span>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./image/mysql.svg" alt="">
-                <span class="skills-card-name"></span>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./image/c.svg" alt="">
-                <span class="skills-card-name"></span>
-            </div>
-
-            <div class="skills-card">
-                <img class="skills-card-img" src="./image/html.svg" alt="">
-                <span class="skills-card-name"></span>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./image/css.svg" alt="">
-                <span class="skills-card-name"></span>
-            </div>
-
-            <div class="skills-card">
-                <img class="skills-card-img" src="./image/javascript.svg" alt="">
-                <span class="skills-card-name"></span>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./image/spring.svg" alt="">
-                <span class="skills-card-name"></span>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./image/visual-studio-code.svg" alt="">
-                <span class="skills-card-name"></span>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./image/github.svg" alt="">
-                <span class="skills-card-name"></span>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./image/postman.svg" alt="">
-                <span class="skills-card-name"></span>
-            </div>
-        </div>
-    </section>
-
-    <section style="margin-top: 10vh;" id="projects">
-
-
-        <h2> Projects </h2>
-
-        <div>
-
-
-            <div class="project-card">
-                <img src="./image/BusJDBC.png" alt="">
-
-                <div class="glass">
-                    <h3 class="project-title">Electricity Bill Payment System</h3>
-                    <div>
-                        <p class="project-description">A console based Electricity Bill Payment System using Java
-                            ,FileReader and DAO Pattern.</p>
-                        <div class="project-tech-stack">
-                            <img src="./image/java.svg" alt="">
-
-
+                    <!-- ========== Skills 1 ========== -->
+                    <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="uil uil-server-network skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Backend Development</h1>
+                                <span class="skills_subtitle">8+ months</span>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
                         </div>
 
+                        <div class="skills_list grid">
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Java</h3>
+                                    <span><i class="bx bxl-java skills-card-img"></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Spring Boot</h3>
+                                    <span><i class='bx bxl-spring-boot skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">MySQL</h3>
+                                    <span><i class='bx bxs-data skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">JDBC</h3>
+                                    <span><i class='bx bx-link skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Hibernate</h3>
+                                    <span><i class='bx bxs-cube-alt skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <a class="project-github-link" href="https://github.com/ritikrana0169/PayBill-Application"
-                        target="_blank">Source-Code</a>
-                    <span> || </span>
-                    <a class="project-deployed-link"
-                        href="https://app.netlify.com/sites/harmonious-fairy-aa48a7/settings/general"
-                        target="_blank">Demo</a>
-                </div>
-            </div>
 
+                    <!-- ========== Skills 2 ========== -->
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="uil uil-arrow skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Frontend Development</h1>
+                                <span class="skills_subtitle">12+ months</span>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
 
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">HTML</h3>
+                                    <span><i class='bx bxl-html5 skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
 
-            <div class="project-card">
-                <img src="./image/CabBooking.jpg" alt="">
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">CSS</h3>
+                                    <span><i class='bx bxl-css3 skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
 
-                <div class="glass">
-                    <h3 class="project-title">Tender Management System using Maven</h3>
-                    <div>
-                        <p class="project-description">A console based Tender Management System using Java ,SQL
-                            ,Hibernate ,Maven and DAO Pattern.</p>
-                        <div class="project-tech-stack">
-                            <img src="./image/java.svg" alt="">
-                            <img src="./image/mysql.svg" alt="">
-                            <img src="./image/hibernatesvg.svg" alt="">
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">JavaScript</h3>
+                                    <span><i class='bx bxl-javascript skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
 
                         </div>
-
                     </div>
-                    <a class="project-github-link" href="https://github.com/ritikrana0169/Tender-Management-System"
-                        target="_blank">Source-Code</a>
-                    <span> || </span>
-                    <a class="project-deployed-link" href="https://github.com/ritikrana0169/Tender-Management-System"
-                        target="_blank">Demo</a>
                 </div>
-            </div>
 
-            <div class="project-card">
-                <img src="./image/Tata1mg.jpg" alt="">
-
-                <div class="glass">
-                    <h3 class="project-title">Clone of Davids Bridal</h3>
-                    <div>
-                        <p class="project-description">The Clone of Davids Bridal website with all the Crud operations,
-                            Cart, Billing and admin pannel.</p>
-                        <div class="project-tech-stack">
-                            <img src="./image/javascript.svg" alt="">
-                            <img src="./image/html.svg" alt="">
-                            <img src="./image/css.svg" alt="">
+                <div>
+                    <!-- ========== Skills 3 ========== -->
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="uil uil-icons skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Other Tech Tools</h1>
+                                <span class="skills_subtitle">8+ months</span>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
                         </div>
 
-                    </div>
-                    <a class="project-github-link" href="https://github.com/ritikrana0169/Davids-bridal-clone"
-                        target="_blank">Source-Code</a>
-                    <span> || </span>
-                    <a class="project-deployed-link" href="https://illustrious-phoenix-d4a196.netlify.app/"
-                        target="_blank">Demo</a>
-                </div>
-            </div>
+                        <div class="skills_list grid">
 
-            <div class="project-card">
-                <img src="./images/paytm.png" alt="">
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">VS Code</h3>
+                                    <span><i class='bx bxl-visual-studio skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
 
-                <div class="glass">
-                    <h3 class="project-title">Clone of Paytm-Mall</h3>
-                    <div>
-                        <p class="project-description">The Clone of Paytm mall website with all basic operations,
-                            Cart, login logout using local storage.</p>
-                        <div class="project-tech-stack">
-                            <img src="./image/javascript.svg" alt="">
-                            <img src="./image/html.svg" alt="">
-                            <img src="./image/css.svg" alt="">
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Spring Tool Suite</h3>
+                                    <span><i class='bx bxl-spring-boot skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">GitHub</h3>
+                                    <span><i class="uil uil-github-alt skills-card-img"></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">PostMan</h3>
+                                    <span><i class='bx bxs-pen skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">CodePen</h3>
+                                    <span><i class='bx bxl-codepen skills-card-img'></i></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+
                         </div>
-
                     </div>
-                    <a class="project-github-link" href="https://github.com/ritikrana0169/Paytm-Mall"
-                        target="_blank">Source-Code</a>
-                    <span> || </span>
-                    <a class="project-deployed-link" href="https://dancing-cocada-3468ae.netlify.app/"
-                        target="_blank">Demo</a>
+
+                    <!-- ========== Skills 4 ========== -->
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="uil uil-illustration skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Design Tools</h1>
+                                <span class="skills_subtitle">12+ Months</span>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+                        <div class="skills_list grid">
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Canva</h3>
+                                    <span class="skills-card-img"></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data skills-card">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name skills-card-name">Flow CV</h3>
+                                    <span class="skills-card-img"></span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <hr class="hr_break_line">
+
+        <!-- ========== Project Section ========== -->
+        <div id="projects" class=" portfolio_container container">
+
+            <div class="portfolio_content grid project-card">
+                <img src="./image/BusJDBC.png" alt="rodan" class="portfolio_img">
+
+                <div class="portfolio_data">
+                    <h3 class="portfolio_title project_title project-title">Electricity Bill Payment System</h3>
+                    <p class="portfolio_description project-description">A console based Electricity Bill Payment System using Java
+                        ,FileReader and DAO Pattern</p>
+                    <p class="project-tech-stack"><b>Tech Stack : </b>Java | MySql | Hibernate</p>
+                    <a href="https://github.com/ritikrana0169/PayBill-Application" target="_blank"
+                        class="project-github-link button button-flex button-small portfolio_button">
+                        GitHub
+                        <i class="uil uil-github-alt button_icon"></i>
+                    </a>
+                    <a href="https://app.netlify.com/sites/harmonious-fairy-aa48a7/settings/general/" target="_blank"
+                        class="button button-flex button-small portfolio_button project-deployed-link">
+                        Demo
+                        <i class="uil uil-external-link-alt button_icon"></i>
+                    </a>
                 </div>
             </div>
 
+            
+            <div class="portfolio_content grid project-card">
+                <img src="./image/Tata1mg.jpg" alt="" class="portfolio_img">
 
-
-        </div>
-    </section>
-
-    <section id="gstats" class="github">
-        <h2 class="section_title">GitHub Stats</h2>
-        <!-- <div class="react-activity-calendar">
-            <div class="calendar" data-aos="fade-up" data-aos-duration="1000">
-                
+                <div class="portfolio_data">
+                    <h3 class="portfolio_title project_title project-title">Clone of Davids Bridal</h3>
+                    <p class="portfolio_description project-description">The Clone of Davids Bridal website with all the Crud operations,
+                        Cart, Billing and admin pannel.</p>
+                    <p class="project-tech-stack"><b>Tech Stack : </b>HTML5 | CSS | JAVASCRIPT | JSON</p>
+                    <a href="https://github.com/ritikrana0169/Davids-bridal-clone" target="_blank"
+                        class="project-github-link button button-flex button-small portfolio_button">
+                        GitHub
+                        <i class="uil uil-github-alt button_icon"></i>
+                    </a>
+                    <a href="https://illustrious-phoenix-d4a196.netlify.app/" target="_blank"
+                        class="button button-flex button-small portfolio_button project-deployed-link">
+                        Demo
+                        <i class="uil uil-external-link-alt button_icon"></i>
+                    </a>
+                </div>
             </div>
-        </div> -->
-
-        <div >
-            <div class="react-activity-calendar">
-            </div>
-            <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-            <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-    
-            <script>
-            GitHubCalendar(".react-activity-calendar", "ritikrana0169");
-        
-            GitHubCalendar(".react-activity-calendar", "ritikrana0169", { responsive: true });
-            </script>
 
            
-        
-        </div> 
-    
 
 
-        <div id="github">
-            <div>
-                <img id="github-streak-stats"
-                    src="https://github-readme-streak-stats.herokuapp.com/?user=ritikrana0169&theme=swift_border=false"
-                    alt="">
-                <img id="github-top-langs"
-                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=ritikrana0169&theme=swift_border=false&include_all_commits=false&count_private=true&layout=compact"
-                    alt="">
+            <div class="portfolio_content grid project-card">
+                <img src="./image/CabBooking.jpg" alt="" class="portfolio_img">
+
+                <div class="portfolio_data">
+                    <h3 class="portfolio_title project_title project-title">Tender Management System using Maven</h3>
+                    <p class="portfolio_description project-description">A console based Tender Management System using Java ,SQL
+                        ,Hibernate ,Maven and DAO Pattern.</p>
+                    <p class="project-tech-stack"><b>Tech Stack : </b>JAVA | STS</p>
+                    <a href="https://github.com/ritikrana0169/Tender-Management-System" target="_blank"
+                        class="project-github-link button button-flex button-small portfolio_button">
+                        GitHub
+                        <i class="uil uil-github-alt button_icon"></i>
+                    </a>
+                    <a href="https://drive.google.com/drive/folders/1zSdU5iXiAqwAytG3SD2yxRAIe_v1XnBf?usp=sharing"
+                        target="_blank" class="button button-flex button-small portfolio_button project-deployed-link">
+                        Demo
+                        <i class="uil uil-external-link-alt button_icon"></i>
+                    </a>
+                </div>
+            </div> 
+
+
+
+
+            <div class="portfolio_content grid project-card">
+                <img src="./image/paytm.png" alt="" class="portfolio_img">
+
+                <div class="portfolio_data">
+                    <h3 class="portfolio_title project_title project-title">Clone of Paytm-Mall</h3>
+                    <p class="portfolio_description project-description">The Clone of Paytm mall website with all basic operations,
+                        Cart, login logout using local storage.</p>
+                    <p class="project-tech-stack"><b>Tech Stack : </b>|HTML | CSS | JavaScript | Local Storage
+                        JAVASCRIPT</p>
+                    <a href="https://github.com/ritikrana0169/Paytm-Mall" target="_blank"
+                        class="project-github-link button button-flex button-small portfolio_button">
+                        GitHub
+                        <i class="uil uil-github-alt button_icon"></i>
+                    </a>
+                    <a href="https://dancing-cocada-3468ae.netlify.app/" target="_blank"
+                        class="button button-flex button-small portfolio_button project-deployed-link">
+                        Demo
+                        <i class="uil uil-external-link-alt button_icon"></i>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <hr class="hr_break_line">
+
+        <!-- ========== Statistics ========== -->
+        <section class="statistics section" id="statistics">
+            <h2 class="section_title">Statistics</h2>
+            <span class="section_subtitle">My Github Statistics</span>
+            <div class="statistics_container container grid">
+
                 <img id="github-stats-card"
-                    src="https://github-readme-stats.vercel.app/api?username=ritikrana0169&theme=swift_border=false&include_all_commits=false&count_private=true"
-                    alt="">
-                <!-- <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=swift" alt=""> -->
+                    src="https://github-readme-stats-sigma-five.vercel.app/api?username=ritikrana0169&theme=city_light&hide_border=true&include_all_commits=true&count_private=true"
+                    alt="github-stats-card">
+
+                <img id="github-top-langs"
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=ritikrana0169&langs_count=4&theme=city_light&hide_border=true&include_all_commits=true&count_private=true&layout=compact"
+                    alt="github-top-langs">
+
+                <img id="github-streak-stats"
+                    src="https://github-readme-streak-stats.herokuapp.com/?user=ritikrana0169&ring=5094f0&currStreakLabel=5094f0&fire=5094f0&theme=city_light&hide_border=true"
+                    alt="github-streak-stats">
             </div>
-        </div>
-    </section>
-    <section id="contact" class="footer">
-        <div>
-            <h1 class="title">Contact Me</h1>
-            <p>__Let's have a discussion of project__</p>
+
+            <span class="section_subtitle">Github Calendar</span>
+            <div class="react-activity-calendar calendar">
+                Loading stuff
+                Loading the data just for you.
+            </div>
+
+
+        </section>
+        <hr class="hr_break_line">
+
+
+        <!-- ========== Contact ========== -->
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Contact Me</h2>
+
+            <div class="contact_container container grid">
+                <div>
+                    <p class="contact_message">Feel free to drop a message if you have any suggestions or collaboration
+                        ideas, and we'll get in touch.</p>
+                    <div class="contact_information">
+                        <i class="uil uil-phone-alt contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Call Me</h3>
+                            <span class="contact_subtitle">+91 9634843557</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="uil uil-envelope-alt contact_icon"></i>
+
+                        <div id="contact-email">
+                            <h3 class="contact_title">Email</h3>
+                            <span class="contact_subtitle">ritikrana719@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="uil uil-location-pin-alt contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">Location</h3>
+                            <span class="contact_subtitle">Baraut, Baghpat, Up</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="uil uil-linkedin-alt contact_icon"></i>
+
+                        <div>
+                            <h3 class="contact_title">LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/ritik-rana-up17/" target="_blank">
+                                <span class="contact_subtitle">www.linkedin.com/in/Ritikrana</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/xgebgryl" method="post" class="contact_form grid">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="name" class="contact_label">Name</label>
+                            <input name="name" type="text" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="email" class="contact_label">Email</label>
+                            <input name="email" type="email" class="contact_input" required>
+                        </div>
+                    </div>
+                    <div class="contact_content">
+                        <label for="project" class="contact_label">Project</label>
+                        <input name="project" type="text" class="contact_input">
+                    </div>
+                    <div class="contact_content">
+                        <label for="message" class="contact_label">Message</label>
+                        <textarea name="message" id="" cols="0" rows="7" class="contact_input"></textarea>
+                    </div>
+                    <div>
+                        <button class="button button-flex" type="submit">Send Message
+                            <i class="uil uil-message button_icon"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <hr class="hr_break_line">
+
+
+    </main>
+
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer_bg">
+            <img src="Images/3.png" alt="">
             <div>
-                <div>
-                    <a href="https://www.linkedin.com/in/ritik-rana-up17/" target="_blank"><img
-                            src="./image/linkedin.svg" alt="Error"></a>
-                    <a id="contact-linkedin" href="https://www.linkedin.com/in/ritik-rana-up17/"
-                        target="_blank">LinkedIn</a>
+                <div class="footer_container container grid">
+                    <div>
+                        <h1 class="footer_title">Ritik Rana</h1>
+                        <span class="footer_subtitle">Java Backend Developer</span>
+                    </div>
+                    <div class="footer_socials">
+                        <a href="https://github.com/Ritikrana0169" target="_blank" class="footer_social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ritik-rana-up17/" target="_blank" class="footer_social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="#" target="_blank" class="footer_social">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                    </div>
                 </div>
                 <div>
-                    <a href="https://github.com/ritikrana0169" target="_blank"><img src="./image/github1.svg"
-                            alt="Error"></a>
-                    <a id="contact-github" href="https://github.com/ritikrana0169" target="_blank">GitHub</a>
-                </div>
-
-                <div>
-                    <a id="contact-email" href="mailto:ritikrana719@gmail.com" target="_blank"><img
-                            src="./image/email.svg" alt=""></a>
-                    <a id="contact-email" href="mailto:ritikrana719@gmail.com"
-                        target="_blank">ritikrana719@gmail.com</a>
-                </div>
-                <div>
-                    <a id="contact-phone" href="tel:+919634843557" target="_blank"><img src="./image/phone.svg"
-                            alt=""></a>
-                    <a id="contact-phone" href="tel:+919634843557" target="_blank">+91 9634843557</a>
+                    <p class="footer_copy">Made with ❤️ by &#169; Ritik Rana </p>
+                    <!-- <p class="footer_copy">Inspired by <a
+                            href="https://github.com/bedimcode/responsive-portfolio-website-Alexa"
+                            target="_blank">@Bedimcode</a> | All rights reserved | 2023</p> -->
                 </div>
             </div>
+        </div>
+    </footer>
 
-        </div>
-    </section>
-    <section id="bottom">
-        <div>
-            <p> <span>©</span> 2023 | Made By Ritik rana</p>
-        </div>
-    </section>
+
+    <!-- ========== SCROLL TOP ========== -->
+    <a href="#home" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup_icon"></i>
+    </a>
+
+
+    <!-- ==================== JAVASCRIPT LINKED FILES ==================== -->
+    <script src="./script/script.js"></script>
+    <script src="./script/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ==================== AUTO-TYPE SCRIPT ==================== -->
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Java Backend Developer"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+        });
+    </script>
+
+    <!-- ==================== PROJECT SLIDER ==================== -->
+    <script>
+        let swiperPortfolio = new Swiper('.swiper-container', {
+            cssMode: true,
+            loop: true,
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            //mousewheel: true,
+            keyboard: true,
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <!-- ==================== GITHUB CALENDER ==================== -->
+    <script>
+        // or enable responsive functionality
+        GitHubCalendar(".calendar", "Ritikrana0169", {
+            responsive: true,
+            global_stats: true,
+            tooltips: true,
+        });
+    </script>
+
+    <!-- ==================== SCROLL REVEAL ANIMATION ==================== -->
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 2000,
+            // reset: true
+        })
+
+        // sr.reveal('.nav', {});
+        //sr.reveal('.nav_list>li', { interval: 100 });
+
+        sr.reveal('.home_data', { delay: 0 });
+        sr.reveal('.home_img', { delay: 0 });
+        sr.reveal('.home_social', { delay: 0 });
+        sr.reveal('.home_social-icon', { interval: 0 });
+        sr.reveal('.home_scroll', { delay: 0 });
+
+        sr.reveal('.about_img', { delay: 0 });
+        sr.reveal('.about_data', { delay: 0 });
+        sr.reveal('.about_info', { interval: 0 });
+        sr.reveal('.about_buttons', { interval: 0 });
+        sr.reveal('.qualification', { delay: 0 });
+
+        sr.reveal('.skills_container', {});
+        sr.reveal('.skills_content', { delay: 0 });
+        sr.reveal('.skills_header', { interval: 0 });
+
+        sr.reveal('.section_subtitle', { delay: 0 });
+        sr.reveal('.portfolio_container', { delay: 0 });
+
+        sr.reveal('.statistics_container>img', { interval: 0 });
+        sr.reveal('.calendar', { delay: 0 });
+
+        sr.reveal('.contact_container', {});
+        sr.reveal('.contact_information', { interval: 0 });
+        sr.reveal('form>div', { interval: 0 });
+
+        sr.reveal('.footer', {});
+        sr.reveal('.footer_container>div', { interval: 0 });
+    </script>
+
 </body>
-<script src="./index.js"></script>
-<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-<script src="gitCalander.js"></script>
 
 </html>
