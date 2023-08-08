@@ -410,10 +410,10 @@ img {
 
 .home_blob {
     width: 200px;
-    fill: var(--first-color);
+    fill: white;
 }
 .home_blob-img {
-    width: 175px;
+    width: 185px;
     transition: 0.5s;
 }
 .home_blob-img:hover {
