@@ -237,15 +237,16 @@
 
                         </div>
                         <!-- ========== Qualification Content 2 ========== -->
-                        <!-- <div class="qualification_content" data-content id="work"> -->
+                         <div class="qualification_content" data-content id="work">
                             <!-- ========== Experience 1 ========== -->
-                            <!-- <div class="qualification_data">
+                             <div class="qualification_data">
                                 <div>
-                                    <h3 class="qualification_title">Sr.Accountant</h3>
-                                    <span class="qualification_subtitle"></span>
+                                    <h3 class="qualification_title">SDE Intern</h3>
+                                    <span class="qualification_subtitle">
+                                        <b>Prompt Personnel Pvt Ltd<b> <br>Backend Developer</span>
                                     <div class="qualification_calender">
                                         <i class="uil uil-calendar-alt"></i>
-                                        
+                                        [ November 2023 – May 2024 ]
                                     </div>
                                 </div>
                                 <div>
@@ -253,8 +254,8 @@
                                     <span class="qualification_line"></span>
                                 </div>
                             </div>
-                             ========== Experience 2 ========== 
-                            <div class="qualification_data">
+                             <!-- ========== Experience 2 ==========  -->
+                            <!-- <div class="qualification_data">
                                 <div></div>
 
                                 <div>
@@ -269,10 +270,10 @@
                                         
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
 
-                        </div> -->
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -621,73 +622,31 @@
             </div>
 
             <span class="section_subtitle">Github Calendar</span>
-            <!-- <div class="react-activity-calendar calendar">
-                Loading stuff
+             <div class="react-activity-calendar calendar">
+                Loading stuff<br>
                 Loading the data just for you.
             </div>
-            <script>
+            <!--<script>
                 GitHubCalendar(".react-activity-calendar", "ritikrana0169");
             
                 GitHubCalendar(".react-activity-calendar", "ritikrana0169", { responsive: true });
                 </script> -->
-                 <div >
-                    <div class="react-activity-calendar calendar" id="calendar">
-                    </div>
-                   <script>
-        // Fetch GitHub activity data using GitHub API
-        fetch('https://api.github.com/users/ritikrana0169/events')
-            .then(response => response.json())
-            .then(data => {
-                // Process the fetched data and display it in the calendar
-                const calendar = document.getElementById('calendar');
-                const events = data.filter(event => event.type === 'PushEvent');
-                const calendarHTML = '<table><thead><tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr></thead><tbody><tr>';
-
-                let currentDate = new Date();
-                currentDate.setDate(1);
-                const month = currentDate.getMonth();
-
-                // Fill in empty cells for the first day of the month
-                for (let i = 0; i < currentDate.getDay(); i++) {
-                    calendarHTML += '<td></td>';
-                }
-
-                // Loop through each day of the month
-                while (currentDate.getMonth() === month) {
-                    const day = currentDate.getDate();
-                    const dayOfWeek = currentDate.getDay();
-
-                    // Customize this to represent your activity, e.g., change color for active days
-                    const dayClass = events.some(event => new Date(event.created_at).getDate() === day) ? 'active' : '';
-
-                    calendarHTML += `<td class="${dayClass}">${day}</td>`;
-
-                    // Start a new row if it's Saturday
-                    if (dayOfWeek === 6 && currentDate.getMonth() === month) {
-                        calendarHTML += '</tr><tr>';
-                    }
-
-                    currentDate.setDate(day + 1);
-                }
-
-                // Fill in remaining empty cells
-                if (currentDate.getDay() !== 0) {
-                    for (let i = currentDate.getDay(); i < 7; i++) {
-                        calendarHTML += '<td></td>';
-                    }
-                }
-
-                calendarHTML += '</tr></tbody></table>';
-
-                // Display the calendar
-                calendar.innerHTML = calendarHTML;
-            })
-            .catch(error => {
-                console.error('Error fetching GitHub activity:', error);
-            });
-    </script>
+                <div>
+                    <div class="react-activity-calendar calendar"></div>
+                    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+                    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+                    
+                    <script>
+                        GitHubCalendar(".react-activity-calendar", "ritikrana0169", {
+                            responsive: true,
+                            global_stats: true,
+                            tooltips: true
+                        });
+                    </script>
+        
+                   
+                
                 </div> 
-
 
         </section>
         <hr class="hr_break_line">
